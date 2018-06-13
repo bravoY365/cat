@@ -1,0 +1,7 @@
+/* pages/search/search.wxss */
+.fangdajing{width: 56rpx; height: 56rpx;}
+/*搜索框*/
+.title{font-size: 28rpx;color:#574C52;}
+.search{position: relative;}
+.search input{margin: auto; border:1rpx solid #D6D6D6; width: 90%; padding:5px; font-size:30rpx;}
+.search image{position: absolute;right:25rpx;top:4px;}

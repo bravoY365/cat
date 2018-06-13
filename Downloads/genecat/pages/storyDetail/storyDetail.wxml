@@ -1,0 +1,53 @@
+<!--pages/storyDetail/storyDetail.wxml-->
+<view>
+  <image class="banner"></image>
+  <view class="title">XXXXXXXxxxxxxxxx标题xxxxxx</view>
+  <view class="data">2018-03-10 12345浏览 . 238回复</view>
+  <view class="author">
+    <image class="logo"></image>
+    <view>
+      <view>@jill</view>
+      <view class="num">2只基因猫，2938喜欢</view>
+    </view>
+    <view class="line"></view>
+    <view class="cat-name">板栗</view>
+  </view>
+  <view>故事内容</view>
+  <view class="commentItems">
+    <view class="item">
+      <image class="logo"></image>
+      <view class="desc">
+        <view class="line1">
+          <text class="name">@frank</text>
+          <text class="time">1小时前</text>
+        </view>
+        <text class="num">2只基因猫，2982喜欢</text>
+        <text class="comment">2323的染发染发</text>
+      </view>
+    </view>
+    <view class="item">
+      <image class="logo"></image>
+      <view class="desc">
+        <view class="line1">
+          <text class="name">@frank</text>
+          <text class="time">1小时前</text>
+        </view>
+        <text class="num">2只基因猫，2982喜欢</text>
+        <text class="comment">2323的染发染发</text>
+        <text class="replay">@frank:谢谢亲，我家喵很可爱～</text>  
+      </view>
+    </view>
+    <view class="item">
+      <image class="logo"></image>
+      <view class="desc">
+        <view class="line1">
+          <text class="name">@frank</text>
+          <text class="time">1小时前</text>
+        </view>
+        <text class="num">2只基因猫，2982喜欢</text>
+        <text class="comment">2323的染发染发</text>
+        <text class="replay">@frank:谢谢亲，我家喵很可爱～</text>  
+      </view>
+    </view>
+  </view>
+</view>

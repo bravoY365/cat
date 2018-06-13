@@ -1,0 +1,41 @@
+<!--pages/geneCenter/geneCenter.wxml-->
+<!--pages/geneCenter/geneCenter.wxml-->
+<view class="container">
+  <view class="gene">
+    <view class="item">
+      <image class="bg">背景logo</image>
+      <view class='info'>
+        <image class="info-gender">性别logo</image><text class="info-name">小灰熊</text>
+      </view>
+      <view class="mth">9.8MTH</view>
+    </view>
+    <image class="and">动图</image>
+     <view class="item">
+      <image class="bg">背景logo</image>
+      <view class='info'>
+        <image class="info-gender">性别logo</image><text class="info-name">pony</text>
+      </view>
+      <view class="mth">10.2MTH</view>
+    </view>
+  </view>
+  <view class="genCatItems-title">基 因 合 成</view>
+  <view class="geneCatItems">
+    <view class="item">
+      <image class="logo">logo</image>
+      <view class="info">
+        <view><image class="gender">logo</image>XXXXX</view>
+        <view class="identifier">23384732947</view>
+      </view>
+      <view class="mth">198 MTH</view>
+    </view>
+    <view class="item">
+      <image class="logo">logo</image>
+      <view class="info">
+        <view><image class="gender">logo</image>XXXXX</view>
+        <view class="identifier">23384732947</view>
+      </view>
+      <view class="mth">198 MTH</view>
+    </view>
+  </view>  
+</view>
+

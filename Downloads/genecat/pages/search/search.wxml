@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<view>
+  <!--搜索框-->
+  <view class="search">
+    <input type='text' placeholder="输入名称或唯一编码进行查找"/>
+    <image class="fangdajing" src="/images/fangdajing.png"/>
+  </view>
+</view>

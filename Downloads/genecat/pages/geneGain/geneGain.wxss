@@ -1,0 +1,21 @@
+/* pages/geneGain/genegGain.wxss */
+/* 公共title */
+._title{font-size: 64rpx;}
+/* 公共title END*/
+
+.value{display: flex;flex-wrap: nowrap;justify-content: space-between;margin-bottom: 70rpx;}
+.value .mth{font-size: 64rpx;}
+
+
+.wallet .item{border:2rpx solid #BDBDBD;border-radius:20rpx;margin: 30rpx 0;}
+.wallet .item .false{display: none;}
+.wallet .item .true{display: block;}
+.wallet .item-a{display: flex;flex-wrap: nowrap;position: relative;padding:16rpx;}
+.wallet .item-a .logo{vertical-align: middle;margin: 0 20rpx 0 0;}
+.wallet .item-a .identifier{color:#757575;font-size:34rpx;}
+.wallet .item-a .tip{color:#757575;font-size:40rpx;position: absolute;top:12rpx;right:20rpx;}
+.wallet .item-a .logo{width: 88rpx;height:88rpx;background: #ff5454;}
+.wallet .item-b{border-top:2rpx solid #BDBDBD;}
+.wallet .item-b .msg{color:#757575;font-size: 30rpx;text-align: center;}
+.wallet .item-b input{background: transparent;margin:20rpx;}
+.wallet .item-b input{border:2rpx solid #BDBDBD;text-align: center;height:90rpx;font-size:34rpx;}

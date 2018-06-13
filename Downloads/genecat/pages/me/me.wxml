@@ -1,0 +1,63 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="me">
+    <text>Hi，</text>
+    <text>susu</text>
+  </view>
+  <view class="data">
+    <view class="data-01">
+      <view class="line-01">
+        <view>我的钱包</view>
+        <view class="font-grey">总资产折合（MTH）</view>
+      </view>
+      <view class="line-02">
+        <view>350.0000</view>
+        <view class="font-grey">≈350.00CNY</view>
+      </view>
+    </view>
+     <view class="data-01">
+      <view class="line-01">
+        <navigator url="../geneCenter/geneCenter" redirect="true" hover-class="navigator-hover">
+          <view>基因中心</view>
+          <view class="font-grey">总价值折合（MTH）</view>
+        </navigator>
+      </view>
+      <view class="line-02">
+        <view>560.0000</view>
+        <view class="font-grey">≈560.00CNY</view>
+      </view>
+    </view>
+  </view>
+  <view class="about">
+    <view>
+      <image class="logo"/>1
+      <view class="name">我的收藏</view>
+      <view class="tri-right"></view>
+    </view>
+     <view>
+      <image class="logo"/>2
+      <view class="name">安全中心</view>
+      <view class="tri-right"></view>
+    </view>
+    <view>
+      <image class="logo"/>3
+      <view class="name">个人中心</view>
+      <view class="tri-right"></view>
+    </view>
+    <view>
+      <image class="logo"/>4
+      <view class="name">交易记录</view>
+      <view class="tri-right"></view>
+    </view>
+    <view>
+      <image class="logo"/>5
+      <view class="name">帮助中心</view>
+      <view class="tri-right"></view>
+    </view>
+    <view>
+      <image class="logo"/>6
+      <view class="name">关于我们</view>
+      <view class="tri-right"></view>
+    </view> 
+  </view>
+</view>

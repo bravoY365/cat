@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<!--搜索框-->
+<view class="search">
+  <input type='text' placeholder="输入名称或唯一编码进行查找"/>
+  <image class="fangdajing" src="/images/fangdajing.png"/>
+</view>
+<!--搜索关键字展位-->
+<view class="keyword">
+  <text class="item">米谷</text>
+  <text class="item">小灰熊</text>
+  <text class="item">迷妹</text>
+  <text class="item">板栗</text>
+  <text class="item">敌哥</text>
+  <text class="item">啦啦</text>
+  <text class="item">兔爷儿</text>
+  <text class="item">呼啦圈</text>
+</view>
+<!--猫咪故事-->
+<view class="story">
+  <view class="title">
+    <text>猫咪故事</text>
+    <view bindtap='turnToCatStoryMore'>查看更多</view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{catStory.autoplay}}" interval="{{catStory.interval}}" duration="{{catStory.duration}}" circular="{{catStory.circular}}" skip-hidden-item-layout="{{true}}" bindchange='storyDesc'>
+    <block wx:for="{{catStoryList}}" wx:key="item.id">
+      <swiper-item>
+        <image src="{{item.show_img}}" class="slide-image" width="355" height="237" bindtap="turnToStoryDetail"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="content">
+    <text class="desc">{{catStoryDesc.title}}</text>
+    <view class="info">
+      <view class="slave">
+        <image src="{{catStoryDesc.author.avatar}}"/>
+        <text>@{{catStoryDesc.author?catStoryDesc.author.nick_name:''}}</text>
+      </view>
+      <view class="pageview">
+        <text>{{catStoryDesc.browse}}浏览</text> .
+        <text>{{catStoryDesc.reply_num}}回复</text>
+      </view>
+    </view>
+  </view> 
+</view>
+<!--最新合成-->
+<view class="complex">
+  <!-- <image wx:for="{{catComplexList}}"> -->
+  <view class="item" wx:for="{{catComplexList}}" wx:key="item">
+    <image class="c{{index+1}}" src="{{item.show_img}}" />
+  </view>
+</view>
+<!--初代猫咪-->
+<view class="first">
+  <view class="title">
+    <text>初代猫咪</text>
+    <view>数量{{catOriginal.allCount}}</view>
+  </view>
+  <view class="items">
+    <view class="item" wx:key="item.id" wx:for="{{catOriginal.list}}" bindtap="turnToCatDetail" data-id="{{item.id}}">
+        <image class="item-cover" src="{{item.show_img}}"/>
+    </view>
+  </view>
+</view>

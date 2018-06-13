@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/catDetail/catDetail",
+    "pages/storyDetail/storyDetail",
+    "pages/othersPage/othersPage",
+    "pages/geneCenter/geneCenter",
+    "pages/geneGain/geneGain",
+    "pages/catFirstMore/catFirstMore",
+    "pages/catStoryMore/catStoryMore",
+    "pages/trade/trade",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "基因猫咪",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#444",
+    "selectedColor":"#CAC8E7",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/trade/trade",
+        "text": "交易"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+  }
+}

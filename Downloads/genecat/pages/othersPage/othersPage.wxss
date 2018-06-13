@@ -1,0 +1,10 @@
+/* pages/othersPage/othersPage.wxss */
+/* 公共 */
+._title{display: flex;flex-wrap: nowrap;justify-content: space-between;padding:0 20rpx;color:#A7999A;font-size:30rpx;}
+/* 公共 END */
+
+/* 我的喜欢 */
+.others-like .items{padding:0 20rpx;}
+.others-like .item{width:220rpx;height:220rpx;background:#ff5454;margin:8rpx;border-radius: 10rpx;}
+/* 我的基因猫 */
+.geneCatItems{padding:0 20rpx;}

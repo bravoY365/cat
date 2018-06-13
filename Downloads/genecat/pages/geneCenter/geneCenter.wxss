@@ -1,0 +1,13 @@
+/* pages/geneCenter/geneCenter.wxss */
+/* pages/geneCenter/geneCenter.wxss */
+.gene{display: flex;flex-wrap: nowrap;justify-content: space-between;margin-bottom:28rpx;}
+.gene .item{width:280rpx;height:280rpx;border:2rpx solid #BDBDBD;position: relative;}
+.gene .item .bg{width:100%;height: 100%;}
+.gene .item .info{position: absolute;top:0;right: 0;}
+.gene .item .info-gender{width:50rpx;height:50rpx;background:#ff5454;vertical-align: middle;}
+.gene .item .info-name{font-size: 30rpx;}
+.gene .item .mth{position: absolute;bottom:0;left:0;right:0;text-align: center;font-size: 30rpx;}
+.gene .and{width:50rpx;height:200rpx;background: #3c9;}
+
+/*基因合成*/
+.genCatItems-title{background:#EDEDF3;text-align: center;font-size:34rpx;height:80rpx;line-height: 80rpx;}

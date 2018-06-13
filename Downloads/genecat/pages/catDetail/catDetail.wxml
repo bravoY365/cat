@@ -1,0 +1,81 @@
+<!--pages/catMix/catMix.wxml-->
+<view>
+  <!--猫咪故事-->
+  <view class="story" wx:if="{{catStoryList.length>0}}">
+    <view class="title">
+      <text>猫咪故事</text>
+      <view bindtap='turnToCatStoryMore'>查看更多</view>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{catStory.autoplay}}" interval="{{catStory.interval}}" duration="{{catStory.duration}}" circular="{{catStory.circular}}" skip-hidden-item-layout="{{true}}" bindchange='storyDesc'>
+      <block wx:for="{{catStoryList}}" wx:key="">
+        <swiper-item>
+          <image src="{{item.show_img}}" class="slide-image" width="355" height="237" bindtap="turnToStoryDetail"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <text class="desc">{{catStoryDesc.title}}</text>
+      <view class="info">
+        <view class="slave">
+          <image src="{{catStoryDesc.icon}}"/>
+          <text>@{{catStoryDesc.name}}</text>
+        </view>
+        <view class="pageview">
+          <text>{{catStoryDesc.skim}}浏览</text> .
+          <text>{{catStoryDesc.reply}}回复</text>
+        </view>
+      </view>
+    </view> 
+  </view>
+  <!-- 猫咪头图 -->
+  <view class="banner">
+    <image class="pic" src="{{catDetail.show_img}}"/>
+    <image class="like"></image>
+    <image class="share"></image>
+    <view class="info">
+      <view class="identifier">{{catDetail.id}}</view>
+      <view class="several">{{catDetail.generations>1?catDetail.generations:'初'}}代</view>
+      <image class="gender"/>
+    </view>
+  </view>
+  <!--MTH-->
+  <view class="mth">
+    <view class="value">{{catDetail.current_price}} MTH</view>
+    <button open-type="getUserInfo" class='btn-get-gene' data-id="{{catDetail.id}}" bindtap="turnToGeneGain">获取基因</button>
+  </view>
+  <!--自我介绍-->
+  <view class="intro">
+    <view class="cat">
+      <text class="title">猫咪简介：</text>
+      <text class="desc">{{catDetail.description}}</text>
+    </view>
+    <view class="host">
+      <image class="logo" src="{{catDetail.master.avatar}}" bindtap="turnToOthersPage"/>
+      <text>@{{catDetail.master.nick_name}}</text>
+      <text class="role">拥有者</text>
+    </view>
+  </view>
+  <!--基因特性-->
+  <view class="feature">
+    <text>基因特性</text>
+  </view>
+  <!--基因来源-->
+  <view class="source">
+    <text>基因来源：</text>
+    <image src="../../images/1.jpg"/>
+    <!-- <image src="../../images/2.jpg"/> -->
+  </view>
+  <!--基因合成 -->
+  <view class="blend">
+    <text>基因合成：</text>
+    <!-- <image src="../../images/1.jpg"/>
+    <image src="../../images/2.jpg"/>
+    <image src="../../images/3.jpg"/>
+    <image src="../../images/4.jpg"/>
+    <image src="../../images/5.jpg"/>
+    <image src="../../images/6.jpg"/>
+    <image src="../../images/7.jpg"/>
+    <image src="../../images/8.jpg"/> -->
+  </view>
+</view>

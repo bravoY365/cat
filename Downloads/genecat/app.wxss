@@ -1,0 +1,28 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;   */
+  justify-content: space-between; 
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  padding:0 24rpx;
+} 
+.font-grey{color:#A7999A;}
+.hide{display: none;}
+.show{display: block;}
+/* 猫咪故事 */
+.story swiper{height:237px;margin-bottom: 12rpx;}
+.story .slide-image{height:100%;width: 100%;}
+.story .title{display: flex;flex-wrap:row;justify-content:space-between;}
+.story .content{padding:0 24rpx;}
+.story .info{display: flex;flex-wrap:row;justify-content:space-between;font-size: 28rpx;margin:30rpx 0 20rpx 0;}
+.story .slave image{width: 40rpx;height: 40rpx;background: #eee;vertical-align: middle;border-radius: 10rpx;margin-right: 10rpx;}
+
+/* 基因合成 */
+.geneCatItems .item{border:2rpx solid #BDBDBD;display: flex;flex-wrap:nowrap;justify-content:space-between;align-items: center;margin: 28rpx 0;padding:36rpx;border-radius:20rpx;position: relative;color:#574C52;}
+.geneCatItems .item .logo{width:80rpx;height:80rpx;border-radius:10rpx;border:2rpx solid #BDBDBD;}
+.geneCatItems .item .info{position: absolute;left: 140rpx;}
+.geneCatItems .item .gender{width:30rpx;height: 30rpx;background: #ff5454;}
+.geneCatItems .item .identifier{font-size:24rpx;}
+.geneCatItems .item .mth{position: absolute;right: 20rpx;font-size:54rpx;}

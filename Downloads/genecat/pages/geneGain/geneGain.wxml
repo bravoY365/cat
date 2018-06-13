@@ -1,0 +1,34 @@
+<!--pages/geneGain/genegGain.wxml-->
+<view class="container">
+  <view class="geneCatItems">
+    <view class="item">
+      <image class="logo" src="{{catDetail.show_img}}"></image>
+      <view class="info">
+        <view>{{catDetail.name}}<image class="gender">logo</image></view>
+        <view class="identifier">{{catDetail.id}}</view>
+      </view>
+      <view class="mth">{{catDetail.current_price}} MTH</view>
+    </view>
+  </view> 
+  <view class="value">
+    <view class="_title">基因价值</view>
+    <view class="mth">{{catDetail.current_gene_price}} MTH</view>
+  </view>
+  <view class="wallet">
+    <view class="_title">选择钱包支付</view>
+    <view class="item" wx:for="{{walletList}}" data-id="{{item.id}}" wx:key="item.id" catchtap='expandDetail'>
+      <view class="item-a">
+        <image class="logo"/>
+        <view>
+          <view class="mth">{{item.balance}} MTH</view>
+          <view class="identifier">{{item.id}}</view>
+        </view>
+        <view class="tip">{{item.name}}</view>
+      </view>
+      <view class="item-b {{isShow===item.id}}">
+        <view class="msg">输入钱包交易密码您将转移 {{catDetail.current_gene_price}}MTH 到 @{{catDetail.master.nick_name}}</view>
+        <input password="true" catchtap="searchBtn" bindconfirm="submitWallet" placeholder-style="color:#000" placeholder='请输入钱包密码'/>
+      </view>
+    </view>
+  </view> 
+</view>

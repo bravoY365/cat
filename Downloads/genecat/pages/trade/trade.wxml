@@ -1,0 +1,72 @@
+<!--pages/trade/trade.wxml-->
+<view>
+  <view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">猫市</view> 
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">MTH</view>  
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChangeTab">  
+    <!-- 猫市 -->  
+    <swiper-item>  
+      <view>
+        <image/>image
+        <view class="params">
+          <!-- 价值 -->
+          <view class="section">
+            <picker bindchange="bindPickerChangeValue" value="{{index}}" range="{{arrayValue}}">
+              <view class="picker">{{arrayValue[indexValue]}}</view>
+            </picker>
+          </view>
+           <!-- 性质 -->
+          <view class="section">
+            <picker bindchange="bindPickerChangeChara" value="{{index}}" range="{{arrayChara}}">
+              <view class="picker">{{arrayChara[indexChara]}}</view>
+            </picker>
+          </view>
+           <!-- 代数 -->
+          <view class="section">
+            <picker bindchange="bindPickerChangenNum" value="{{index}}" range="{{arrayNum}}">
+              <view class="picker">{{arrayNum[indexNum]}}</view>
+            </picker>
+          </view>
+           <!-- 性别 -->
+          <view class="section">
+            <picker bindchange="bindPickerChangeGender" value="{{index}}" range="{{arrayGender}}">
+              <view class="picker">{{arrayGender[indexGender]}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="items">
+          <image src="../../images/1.jpg" bindtap="turnToCatItem"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+          <image src="../../images/1.jpg"/>
+          <image src="../../images/5.jpg"/>
+        </view>
+        <!-- <loading hidden="{{loadHidden}}" bindchange="loadChange">
+          数据加载中...
+        </loading>
+        <view bindtap="loadMore" data-lastid="{{lastid}}" data-isfrist="{{isfrist}}" class="loadMore" style="display:{{moreHidden}}">加载更多</view>
+        <toast hidden="{{toastHidden}}" bindchange="toastChange" duration="3000">{{msg}}</toast> -->
+      </view>  
+    </swiper-item>  
+    <!-- MTH --> 
+    <swiper-item>  
+      
+    </swiper-item>   
+  </swiper>  
+</view>

@@ -1,0 +1,28 @@
+/**index.wxss**/
+/*搜索框*/
+.title{font-size: 28rpx;color:#574C52;}
+.search{position: relative;}
+.search input{margin: auto; border:1rpx solid #D6D6D6; width: 90%; padding:5px; font-size:30rpx;}
+.search image{position: absolute;right:25rpx;top:4px;}
+.fangdajing{width: 56rpx; height: 56rpx;}
+/*搜索关键词展位*/
+.keyword{width:90%;height:40rpx;margin:auto;overflow: hidden;font-size: 28rpx;}
+.keyword text+text{margin-left: 10rpx;}
+/*猫咪故事*/
+
+/*最新合成*/
+.complex{display: flex;flex-wrap: nowrap;position: relative;height:280rpx;} 
+.complex image{width: 180rpx;height:180rpx;border:2rpx solid #ff5454;position: absolute;border-radius: 50%;background: #fff;}
+.complex .c1{left:0;}
+.complex .c2{left:40%;margin-left: -190rpx;}
+.complex .c3{left:50%;margin-left: -90rpx;}
+.complex .c4{right:40%;margin-right: -190rpx;}
+.complex .c5{right:0;}
+.complex .c2,.complex .c4{z-index: 1;}
+.complex .c3{transform: scale(1.5);z-index: 2;}
+/*初代猫咪*/
+.first{padding:0 20rpx;}
+.first .title{display: flex;flex-wrap:row;justify-content:space-between;}
+.first .items{display: flex;flex-wrap:wrap;align-content:center;}
+.first .item{width:220rpx;height:220rpx;margin: 8rpx;} 
+.first image{border-radius:20rpx;width:100%;height: 100%;background-size: 100% 100%；}

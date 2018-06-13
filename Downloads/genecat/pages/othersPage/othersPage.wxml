@@ -1,0 +1,59 @@
+<!--pages/othersPage/othersPage.wxml-->
+<view>
+  <!--猫咪故事-->
+  <view class="story">
+    <view class="title">
+      <text>猫咪故事</text>
+      <view bindtap='turnToCatStoryMore'>查看更多</view>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{catStory.autoplay}}" interval="{{catStory.interval}}" duration="{{catStory.duration}}" circular="{{catStory.circular}}" skip-hidden-item-layout="{{true}}" bindchange='storyDesc'>
+      <block wx:for="{{catStory.list}}" wx:key="">
+        <swiper-item>
+          <image src="{{item.imgUrls}}" class="slide-image" width="355" height="237"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <text class="desc">{{catStoryDesc.desc}}</text>
+      <view class="info">
+        <view class="slave">
+          <image src="{{catStoryDesc.icon}}"/>
+          <text>@{{catStoryDesc.name}}</text>
+        </view>
+        <view class="pageview">
+          <text>{{catStoryDesc.skim}}浏览</text> .
+          <text>{{catStoryDesc.reply}}回复</text>
+        </view>
+      </view>
+    </view> 
+  </view>
+  <!-- 我的喜欢 -->
+  <view class="others-like">
+    <view class="_title">
+      <text>我的喜欢</text>
+      <view>查看更多</view>
+    </view>
+    <view class="items">
+      <image class="item">1</image>
+      <image class="item">1</image>
+      <image class="item">1</image>
+      <image class="item">1</image>
+    </view>
+  </view>
+  <!-- 我的基因 -->
+  <view class="_title">
+    <text>我的基因猫</text>
+    <view>查看更多</view>
+  </view>
+  <view class="geneCatItems">
+    <view class="item">
+      <image class="logo">logo</image>
+      <view class="info">
+        <view><image class="gender">logo</image>XXXXX</view>
+        <view class="identifier">23384732947</view>
+      </view>
+      <view class="mth">98 MTH</view>
+    </view>
+  </view> 
+</view>

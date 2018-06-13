@@ -1,0 +1,95 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"appid": "wxf41e9c41efae73db",
+	"projectname": "genecat",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "初代猫单页",
+					"pathName": "pages/catFirst/catFirst",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "trade",
+					"pathName": "pages/trade/trade",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "获取基因",
+					"pathName": "pages/geneGain/genegGain",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "别人主页",
+					"pathName": "pages/othersPage/othersPage",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "基因中心",
+					"pathName": "pages/geneCenter/geneCenter",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "storyDetail",
+					"pathName": "pages/storyDetail/storyDetail",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "catDetail",
+					"pathName": "pages/catDetail/catDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": ""
+				}
+			]
+		}
+	}
+}

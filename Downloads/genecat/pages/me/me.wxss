@@ -1,0 +1,17 @@
+/* pages/me/me.wxss */
+
+.container{padding:0 32rpx;}
+.me{margin-bottom:40rpx;}
+
+.data{display: flex;flex-direction: wrap;justify-content:space-between;margin-bottom:72rpx;}
+.data .data-01{width:280rpx;height:225rpx;border:2rpx solid #BDBDBD;padding:15rpx 0 0 12rpx;}
+.data .data-01:first-child{background: #e5e3e5;}
+.data .data-01:last-child{background: #DCF6FE;}
+.data .line-01{margin-bottom: 32rpx;}
+.data .line-02 view:first-child{font-size:36rpx;}
+.data .font-grey{font-size:28rpx;}
+
+
+.about>view{display: flex;align-items:center;}
+.about .logo{width: 50rpx;height: 50rpx;}
+.about .name{border-bottom: 2rpx solid #D1D1D1;width:calc(100% - 160rpx);padding:20rpx 10rpx;}
